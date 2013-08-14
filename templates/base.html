@@ -1,0 +1,27 @@
+{% load i18n %}
+{% load bootstrap %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{%block title %}{% trans 'Магазины' %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/static/css/style.css' %}">
+    {% block css %}{% bootstrap_css %}{% endblock %}
+    {% block js %}{% bootstrap_js %}{% endblock %}
+</head>
+<body>
+    <div class="loginbar">
+    {% block login %}2{% endblock %}
+    </div>
+        <div class="container-fluid">
+    <div class="row-fluid">
+    <div class="span2">
+        {% block sidebar %}2{% endblock %}
+    </div>
+    <div class="span10">
+        {% block content %}2{% endblock %}
+    </div>
+    </div>
+    </div>
+</body>
+</html>
