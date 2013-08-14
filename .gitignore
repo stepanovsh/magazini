@@ -1,0 +1,10 @@
+*.pyc
+
+/magazini/settings/local.py
+
+
+.idea
+assets
+
+
+storage.db
